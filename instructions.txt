@@ -1,0 +1,22 @@
+// Steps
+
+// 1. Fetch the user's query and location (latitude and longitude).
+// 2. Retrieve the list of hospitals and their details, including their latitude, longitude, and severity levels.
+// 3. Prune the list of hospitals based on the following distance criteria:
+//    - For high severity cases (severity >= 8), exclude hospitals that are more than 10KM away.
+//    - For other cases (severity < 8), exclude hospitals that are more than 30KM away.
+//    - Use the Euclidean distance formula to calculate the distance between the user's location and the hospital's location.
+// 4. Process the remaining hospitals and rank them based on the appointment data fetched using a vector database.
+// 5. Recommend the top 10 hospitals from the ranked list.
+
+// System Processing Instruction:
+// You are a medical helper. I will provide you with a query and a list of hospitals based on their appointments. Your task is to recommend the top 10 hospitals among them based on the above steps.
+
+// {query}
+
+// Appointment Data: {
+//   Appointment data fetched using a vector database
+// }
+
+// Response Format:
+// [List of top 10 hospital IDs]

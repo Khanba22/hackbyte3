@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "lib": ["ESNext"],
+      "esModuleInterop": true,
+      "strict": true,
+      "outDir": "dist",
+      "rootDir": "./server",
+      "skipLibCheck": true
+    },
+    "include": ["server/**/*"],
+    "exclude": ["node_modules"]
+  }
+  
